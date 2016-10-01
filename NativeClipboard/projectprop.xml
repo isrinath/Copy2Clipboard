@@ -243,7 +243,7 @@
     <attributes name="bb10urlscheme" value=""/>
     <attributes name="apppackagekey" value="com.orgname.VibrateDevice"/>
     <attributes name="watchenabled" value="false"/>
-    <attributes name="andtargetsdkkey" value="2.3.3"/>
+    <attributes name="andtargetsdkkey" value="4.4"/>
     <attributes name="wp81sdescriptionkey" value="Sample Test Application"/>
     <attributes name="tcbjs240basefontsize" value="10"/>
     <attributes name="appversionkey" value="1.0.0"/>
