@@ -1790,21 +1790,96 @@
             </event_onTouchMove>
             <event_onTouchEnd>
                 <evtSequence>
-                    <actionList xsi:type="eventExpressionAction">
+                    <actionList xsi:type="eventFunctionAction">
                         <enabled>true</enabled>
                         <name></name>
-                        <type>5</type>
-                        <expr></expr>
-                        <exprMap>
+                        <type>6</type>
+                        <functionName>None</functionName>
+                        <functionNameMap>
                             <entry>
                                 <key>js</key>
-                                <value>var couponCode = this.text;
-	
-	var returnedValue = Copy2Clipboard.copy2ClipBoard(couponCode);
-	
-	alert("couponCode :"+couponCode+" is copied");</value>
+                                <value>onTouchEndCouponCode</value>
                             </entry>
-                        </exprMap>
+                        </functionNameMap>
+                        <paramData>
+                            <datatype>string</datatype>
+                            <paramName>eventObj</paramName>
+                            <valType>0</valType>
+                            <value> eventobject</value>
+                            <valueMap>
+                                <entry>
+                                    <key>js</key>
+                                    <value> eventobject</value>
+                                </entry>
+                            </valueMap>
+                        </paramData>
+                        <paramData>
+                            <datatype>string</datatype>
+                            <paramName>x</paramName>
+                            <valType>0</valType>
+                            <value> x</value>
+                            <valueMap>
+                                <entry>
+                                    <key>js</key>
+                                    <value> x</value>
+                                </entry>
+                            </valueMap>
+                        </paramData>
+                        <paramData>
+                            <datatype>string</datatype>
+                            <paramName>y</paramName>
+                            <valType>0</valType>
+                            <value> y</value>
+                            <valueMap>
+                                <entry>
+                                    <key>js</key>
+                                    <value> y</value>
+                                </entry>
+                            </valueMap>
+                        </paramData>
+                        <paramDataMap>
+                            <entry>
+                                <key>js</key>
+                                <value>
+                                    <paramList>
+                                        <datatype>string</datatype>
+                                        <paramName>eventObj</paramName>
+                                        <valType>0</valType>
+                                        <value> eventobject</value>
+                                        <valueMap>
+                                            <entry>
+                                                <key>js</key>
+                                                <value> eventobject</value>
+                                            </entry>
+                                        </valueMap>
+                                    </paramList>
+                                    <paramList>
+                                        <datatype>string</datatype>
+                                        <paramName>x</paramName>
+                                        <valType>0</valType>
+                                        <value> x</value>
+                                        <valueMap>
+                                            <entry>
+                                                <key>js</key>
+                                                <value> x</value>
+                                            </entry>
+                                        </valueMap>
+                                    </paramList>
+                                    <paramList>
+                                        <datatype>string</datatype>
+                                        <paramName>y</paramName>
+                                        <valType>0</valType>
+                                        <value> y</value>
+                                        <valueMap>
+                                            <entry>
+                                                <key>js</key>
+                                                <value> y</value>
+                                            </entry>
+                                        </valueMap>
+                                    </paramList>
+                                </value>
+                            </entry>
+                        </paramDataMap>
                     </actionList>
                     <enabled>true</enabled>
                     <seqname></seqname>

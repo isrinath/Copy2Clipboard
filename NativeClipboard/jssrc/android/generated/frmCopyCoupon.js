@@ -1,8 +1,6 @@
 //Form JS File
 function frmCopyCoupon_lblCoupon_onTouchEnd_seq0(eventobject, x, y) {
-    var couponCode = this.text;
-    var returnedValue = Copy2Clipboard.copy2ClipBoard(couponCode);
-    alert("couponCode :" + couponCode + " is copied");
+    onTouchEndCouponCode.call(this, eventobject, x, y);
 };
 
 function frmCopyCoupon_button1402587729821_onClick_seq0(eventobject) {

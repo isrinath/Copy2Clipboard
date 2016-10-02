@@ -2,7 +2,7 @@
 var globalhttpheaders = {};
 var appConfig = {
     appId: "NativeClipboard",
-    appName: "VibrateDevice",
+    appName: "NativeClipboard",
     appVersion: "1.0.0",
     platformVersion: null,
     serverIp: "127.0.0.1",
@@ -47,6 +47,9 @@ function loadResources() {
     globalhttpheaders = {};
     kony.os.loadLibrary({
         "javaclassname": "com.konylabs.ffi.N_Copy2Clipboard"
+    });
+    kony.os.loadLibrary({
+        "javaclassname": "com.konylabs.ffi.N_ffi"
     });
     sdkInitConfig = {
         "appConfig": appConfig,
