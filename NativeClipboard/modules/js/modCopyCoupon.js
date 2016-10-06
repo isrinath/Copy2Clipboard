@@ -6,8 +6,8 @@ function onTouchEndCouponCode(eventObj,x,y){
 	//#endif
 	
 	//#ifdef android
-	var Copy2ClipboardObject = new ffi.Copy2Clipboard();
-	ffi.setTextToClipboard(couponCode);
+	var Copy2ClipboardObject = new Copy2ClipboardAndroid.Copy2Clipboard();
+	Copy2ClipboardAndroid.setTextToClipboard(couponCode);
 	//#endif
 	
 	
