@@ -7,14 +7,14 @@ import com.konylabs.vm.LuaTable;
 
 
 
-import org.srinath.clipboard.Copy2Clipboard;
+import com.digibank.ce.clipboard.Copy2Clipboard;
 import com.konylabs.libintf.Library;
 import com.konylabs.libintf.JSLibrary;
 import com.konylabs.vm.LuaError;
 import com.konylabs.vm.LuaNil;
 
 
-public class N_ffi extends JSLibrary {
+public class N_Copy2ClipboardAndroid extends JSLibrary {
 
  
  
@@ -32,7 +32,7 @@ public class N_ffi extends JSLibrary {
 
 
 
-	public N_ffi(){
+	public N_Copy2ClipboardAndroid(){
 	}
 
 	public Object[] execute(int index, Object[] params) {
@@ -66,7 +66,7 @@ public class N_ffi extends JSLibrary {
 	}
 	public String getNameSpace() {
 		// TODO Auto-generated method stub
-		return "ffi";
+		return "Copy2ClipboardAndroid";
 	}
 
 
@@ -78,7 +78,7 @@ public class N_ffi extends JSLibrary {
  	public final Object[] setTextToClipboard( java.lang.String inputKey0 ){
  
 		Object[] ret = null;
- org.srinath.clipboard.Copy2Clipboard.setTextToClipboard( inputKey0
+ com.digibank.ce.clipboard.Copy2Clipboard.setTextToClipboard( inputKey0
  );
  
  ret = new Object[]{LuaNil.nil, new Double(0)};
@@ -93,7 +93,7 @@ class Copy2Clipboard extends JSLibrary {
 	String[] methods = { };
 
 	public Object createInstance(final Object[] params) {
- return new org.srinath.clipboard.Copy2Clipboard(
+ return new com.digibank.ce.clipboard.Copy2Clipboard(
  );
  }
 

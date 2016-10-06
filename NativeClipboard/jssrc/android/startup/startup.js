@@ -49,7 +49,7 @@ function loadResources() {
         "javaclassname": "com.konylabs.ffi.N_Copy2Clipboard"
     });
     kony.os.loadLibrary({
-        "javaclassname": "com.konylabs.ffi.N_ffi"
+        "javaclassname": "com.konylabs.ffi.N_Copy2ClipboardAndroid"
     });
     sdkInitConfig = {
         "appConfig": appConfig,
