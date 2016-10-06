@@ -1,15 +1,13 @@
 //Form JS File
-function frmCopyCoupon_lblCoupon_onTouchEnd_seq0(eventobject, x, y, contextInfo) {
-    var couponCode = this.text;
-    var returnedValue = Copy2Clipboard.copy2ClipBoard(couponCode);
-    alert("couponCode :" + couponCode + " is copied");
+function frmCopyCoupon_lblCoupon_onTouchEnd_seq0(eventobject, x, y) {
+    onTouchEndCouponCode.call(this, eventobject, x, y);
 };
 
 function frmCopyCoupon_button1402587729821_onClick_seq0(eventobject) {
     frmCopyCoupon.lblCoupon.text = frmCopyCoupon.textbox21402587729820.text
 };
 
-function frmCopyCoupon_label1402587729829_onTouchEnd_seq0(eventobject, x, y, contextInfo) {
+function frmCopyCoupon_label1402587729829_onTouchEnd_seq0(eventobject, x, y) {
     var couponCode = this.text;
     var returnedValue = Copy2Clipboard.copy2ClipBoard(couponCode);
     alert("couponCode :" + couponCode + " is copied");
@@ -116,7 +114,8 @@ function addWidgetsfrmCopyCoupon() {
         "textCopyable": false,
         "wrapping": constants.WIDGET_TEXT_WORD_WRAP
     });
-    frmCopyCoupon.add(lblCoupon, textbox21402587729820, button1402587729821, label1402587729829);
+    frmCopyCoupon.add(
+    lblCoupon, textbox21402587729820, button1402587729821, label1402587729829);
     frmCopyCoupon.setDefaultUnit(kony.flex.DP);
 };
 
@@ -156,13 +155,11 @@ function frmCopyCouponGlobals() {
         "headerOverlap": false,
         "inTransitionConfig": {
             "transitionDirection": "none",
-            "transitionEffect": "none",
-            "transitionDuration": 0.3
+            "transitionEffect": "none"
         },
         "outTransitionConfig": {
             "transitionDirection": "none",
-            "transitionEffect": "none",
-            "transitionDuration": 0.3
+            "transitionEffect": "none"
         }
     });
 };

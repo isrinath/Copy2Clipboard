@@ -12,11 +12,11 @@ function displayError(code, msg) {
     kony.ui.Alert(code + "- " + msg, null, "error", null, null);
 };
 var mergeHeaders = function(httpHeaders, globalHeaders) {
-    for (var attrName in globalHeaders) {
-        httpHeaders[attrName] = globalHeaders[attrName];
+        for (var attrName in globalHeaders) {
+            httpHeaders[attrName] = globalHeaders[attrName];
+        }
+        return httpHeaders;
     }
-    return httpHeaders;
-}
 
 function appmiddlewareinvoker(inputParam, isBlocking, indicator, datasetID) {
     var url = appConfig.url;

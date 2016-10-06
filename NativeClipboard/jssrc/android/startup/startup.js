@@ -46,7 +46,7 @@ function themeCallBack() {
 function loadResources() {
     globalhttpheaders = {};
     kony.os.loadLibrary({
-        "javaclassname": "com.konylabs.ffi.N_Copy2Clipboard"
+        "javaclassname": "com.konylabs.ffi.N_Copy2ClipboardiOS"
     });
     kony.os.loadLibrary({
         "javaclassname": "com.konylabs.ffi.N_Copy2ClipboardAndroid"

@@ -2,7 +2,7 @@ function onTouchEndCouponCode(eventObj,x,y){
 	var couponCode = eventObj.text;
 	
 	//#ifdef iphone
-	var returnedValue = Copy2Clipboard.copy2ClipBoard(couponCode);
+	var returnedValue = Copy2ClipboardiOS.setTextToClipboard(couponCode);
 	//#endif
 	
 	//#ifdef android

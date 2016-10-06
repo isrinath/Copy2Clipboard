@@ -30,7 +30,8 @@ function addWidgetsfrmHome() {
         "glowEffect": false,
         "showProgressIndicator": true
     });
-    frmHome.add(button999296733482276);
+    frmHome.add(
+    button999296733482276);
     frmHome.setDefaultUnit(kony.flex.DP);
 };
 
@@ -70,13 +71,11 @@ function frmHomeGlobals() {
         "headerOverlap": false,
         "inTransitionConfig": {
             "transitionDirection": "none",
-            "transitionEffect": "none",
-            "transitionDuration": 0.3
+            "transitionEffect": "none"
         },
         "outTransitionConfig": {
             "transitionDirection": "none",
-            "transitionEffect": "none",
-            "transitionDuration": 0.3
+            "transitionEffect": "none"
         }
     });
 };

@@ -1,19 +1,19 @@
 //startup.js file
 var globalhttpheaders = {};
 var appConfig = {
-    appId: "VibrateDevice",
-    appName: "VibrateDevice",
+    appId: "NativeClipboard",
+    appName: "NativeClipboard",
     appVersion: "1.0.0",
     platformVersion: null,
-    serverIp: "192.168.1.245",
+    serverIp: "127.0.0.1",
     serverPort: "8080",
     secureServerPort: "443",
     isDebug: true,
     middlewareContext: "middleware",
     isMFApp: false,
     eventTypes: [],
-    url: "http://192.168.1.245:8080/middleware/MWServlet",
-    secureurl: "http://192.168.1.245:8080/middleware/MWServlet"
+    url: "http://127.0.0.1:8080/middleware/MWServlet",
+    secureurl: "http://127.0.0.1:8080/middleware/MWServlet"
 };
 sessionID = "";
 
